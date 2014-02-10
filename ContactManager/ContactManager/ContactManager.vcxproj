@@ -74,7 +74,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ContactDataStore.cpp" />
+    <ClCompile Include="ContactEntry.cpp" />
     <ClCompile Include="ContactManager.cpp" />
+    <ClCompile Include="Contacts.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContactDataStore.h" />
+    <ClInclude Include="ContactEntry.h" />
+    <ClInclude Include="Contacts.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contacts.txt" />
+    <None Include="Issues.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

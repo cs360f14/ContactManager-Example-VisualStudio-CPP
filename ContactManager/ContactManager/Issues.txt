@@ -1,0 +1,13 @@
+1. Search does not work
+2. Add contact does not work
+3. Delete contact does not work
+4. No way to open a new file once the contact manager has started
+5. The menu system is very fragile.
+6. Bad Code: Many magic constants.
+7. We need to be able to print a nice, human readable list of contacts to the
+screen, not a CSV file dumped to the screen.
+8. Check for memor leaks
+9. Implement a better backend data store.
+10. Allow the user (in ContactManager.cpp) to specify to Contacts which backend
+data store to use.
+11. Code is missing comments or comments are incorrect.

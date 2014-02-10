@@ -8,6 +8,17 @@
 // ***************************************************************************
 
 #include <iostream>
+#include "Contacts.h"
+
+void printMenu()
+{
+	std::cout<<"1. Print contacts\n";
+	std::cout<<"2. Search contacts\n";
+	std::cout<<"3. Add contact\n";
+	std::cout<<"4. Delete contact\n";
+	std::cout<<"5. Write to file\n";
+	std::cout<<"6. Quit\n";
+}
 
 // ***************************************************************************
 // Function:		main
@@ -19,6 +30,40 @@
 // ***************************************************************************
 int main()
 {
-	std::cout << "Hello World\n";
+	Contacts *pContacts;
+	const int QUIT = 6;
+	int choice=0;
+	std::string szFilename;
+
+	pContacts = new Contacts("contacts.txt");
+
+
+	while(QUIT != choice )
+	{
+		printMenu();
+		std::cin >> choice;
+
+		switch( choice )
+		{
+		case 1:
+			std::cout << *pContacts;
+			std::cout << "\n";
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+		case 5:
+			std::cout << "Filename: ";
+			std::cin >> szFilename;
+			pContacts->writeData(szFilename);
+			break;
+		case 6:
+			break;
+		}
+	}
+
+	delete pContacts;
 	return EXIT_SUCCESS;
 }

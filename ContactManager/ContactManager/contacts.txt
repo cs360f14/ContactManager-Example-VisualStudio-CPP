@@ -1,0 +1,3 @@
+bob,smith,smith@example.com
+alice,jones,aj@example.com
+charles,spook,spook@example.com
