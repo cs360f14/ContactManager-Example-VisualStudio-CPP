@@ -30,7 +30,7 @@ than others, and some issue reports are more descriptive than others.  There may
 * file i/o
 * enum
 * typedef
-* &lt;string&gt>
+* &lt;string&gt;
 * function pointers (optional)
 
 
